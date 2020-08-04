@@ -1,0 +1,25 @@
+<form class="text-center border border-light p-5" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+  <p class="h4 mb-4">Update IPO</p>
+
+  <input type="text" formControlName="companyName" class="form-control mb-4" placeholder="Company Name">
+
+  <input type="email" formControlName="stockExchange" class="form-control mb-4" placeholder="Stock Exchange">
+
+  <input type="text" formControlName="pricePerShare" class="form-control mb-4" placeholder="Price Per Share">
+
+  <input type="text" formControlName="totalNumberOfShares" class="form-control mb-4" placeholder="Total Number Of Shares">
+
+  <input type="text" formControlName="openDateTime" class="form-control mb-4" placeholder="Open Date Time">
+
+
+  <!-- Message -->
+  <div class="form-group">
+    <textarea class="form-control rounded-0" formControlName="remarks" rows="3" placeholder="Remarks"></textarea>
+  </div>
+
+
+  <!-- Send button -->
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+

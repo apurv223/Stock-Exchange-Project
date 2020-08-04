@@ -1,0 +1,29 @@
+<div >
+  <h1>List of Companies</h1>
+  <table class="table table-striped " style="float: left;">
+    <thead>
+    <tr>
+      <th>companyName</th>
+      <th>ceo</th>
+      <th>boardOfDirectors</th>
+      <th>listedInStockExchanges</th>
+      <th>sector</th>
+      <th>briefWriteUpe</th>
+      <th>stockCode</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let company of companylist">
+      <td>{{company.companyCode}}</td>
+      <td>{{company.companyName}}</td>
+      <td>{{company.turnover}}</td>
+      <td>{{company.ceo}}</td>
+      <td>{{company.boardOfDirectors}}</td>
+      <td>{{company.sector}}</td>
+      <td>{{company.stockCode}}</td>
+<!--      <td><button class="btn btn-danger" (click)="delete(company)">delete</button></td>
+      <td><button class="btn btn-success" (click)="setFrame(company)">change</button></td>-->
+      <!-- <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td> -->
+    </tr>
+    </tbody>
+  </table>

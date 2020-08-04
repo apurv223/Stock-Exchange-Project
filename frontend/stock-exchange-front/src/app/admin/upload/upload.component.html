@@ -1,0 +1,51 @@
+<head>
+
+
+    <style>
+        html, body {
+  margin: 0; padding: 0;
+}
+.hero-bkg-animated {
+  background: gray url(assets/images/logo.jpg) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 405px;
+  padding-top: 220px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+    </style>
+</head>
+<body>
+<div class="hero-bkg-animated">
+<div class="card text-dark bg-light mb-3">
+        <p class="h4 card-header">Import Excel Data</p>
+        <div class="card-body bg-light">
+
+            <p class="card-text">Select File to be uploaded:&nbsp;</p>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile">
+                    <label class="custom-file-label" for="inputGroupFile">Choose file</label>
+                </div>
+<!--                <div class="input-group-append">
+                  <span class="input-group-text" id="inputGroupFileAddon"><button (click)="onUpload()">Upload</button>></span>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+
+
