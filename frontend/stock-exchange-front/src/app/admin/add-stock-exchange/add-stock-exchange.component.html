@@ -2,12 +2,12 @@
     <p class="h4 card-header">Add New Stock Exchange</p>
     <div class="card-body bg-light">
         <p class="card-text h6">Please fill the details:</p>
-        <form>
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
             <div class="input-group mt-3 mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Stock Exchange Name</span>
                 </div>
-                <input type="text" class="form-control" />
+                <input type="text" formControlName="stockName" class="form-control" />
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">

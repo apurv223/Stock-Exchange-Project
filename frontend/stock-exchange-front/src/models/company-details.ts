@@ -1,20 +1,20 @@
 export class CompanyDetails {
 
-      /*private*/ companyCode : number;
+     companyCode : number;
 
-      /*private*/ companyName : string;
+    companyName : string;
 
-      /*private*/ turnover : number;
+      turnover : number;
 
-      /*private*/ ceo : string;
+     ceo : string;
 
-      /*private*/ boardOfDirectors : string;
+  boardOfDirectors : string;
 
-      /*private*/ sector : string;
+   sector : string;
 
-      /*private*/ briefWriteup : string;
+    briefWriteup : string;
 
-      /*private*/ stockCode : string;
+ stockCode : string;
           constructor(){
           }
 

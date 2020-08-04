@@ -1,4 +1,5 @@
 export class IpoDetails {
+  id: number;
   companyName: string;
   stockExchange: string;
   pricePerShare: string;

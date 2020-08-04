@@ -14,6 +14,7 @@ import { ManageIpoComponent } from './user/manage-ipo/manage-ipo.component';
 import { DetailsComponent } from './user/details/details.component';
 import { ListCompanyComponent } from './admin/list-company/list-company.component';
 import { UpdateDetailsComponent } from './user/update-details/update-details.component';
+import { IpoListComponent } from './admin/ipo-list/ipo-list.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
       { path: 'add-stock-exchange', component: AddStockExchangeComponent },
       { path: 'list-company', component: ListCompanyComponent },
       { path: 'update-ipo', component: UpdateIpoComponent },
+      { path: 'ipo-list', component: IpoListComponent },
     ]
   },
   {

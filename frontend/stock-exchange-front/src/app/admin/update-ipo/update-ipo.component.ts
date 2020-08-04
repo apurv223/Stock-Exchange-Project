@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { IpoDetails } from '../../../models/ipo-details';
-import {IpoService } from '../../service/ipo.service'
+import {IpoService } from '../../service/ipo.service';
+
 @Component({
   selector: 'update-ipo',
   templateUrl: './update-ipo.component.html',

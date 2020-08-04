@@ -13,11 +13,10 @@ private baseUrl: string;
   }
 
     public getAllCompanies(): Observable<any> {
-       console.log(this.http.get('http://localhost:8100/company'+'/all'));
-       return this.http.get('http://localhost:8100/company'+'/all');
+       return this.http.get(this.baseUrl+'/all');
       }
-    public doRegistration(company: CompanyDetails): Observable<any>{
-    return  this.http.post(this.baseUrl+'/add', company);
+    public addCompany(company: CompanyDetails): Observable<any>{
+    return  this.http.post<CompanyDetails>(this.baseUrl+'/add', company);
     }
     public deleteCompany(company: CompanyDetails): Observable<any>{
       return  this.http.post(this.baseUrl+'/delete', company);
